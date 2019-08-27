@@ -7,6 +7,10 @@ class ReviewSchema extends Schema {
   up () {
     this.create('reviews', (table) => {
       table.increments()
+      table.integer('star').notNullable()
+      table.string('comment')
+      table.integer('user_id').notNullable()
+      table.integer('reviewer_id').notNullable()
       table.timestamps()
     })
   }

@@ -7,6 +7,11 @@ class BookingSchema extends Schema {
   up () {
     this.create('bookings', (table) => {
       table.increments()
+      table.datetime('start_date').notNullable()
+      table.datetime('end_date').notNullable()
+      table.string('status').defaultTo('pending')
+      table.integer('user_id').notNullable().unique()
+      table.integer('post_id').notNullable().unique()
       table.timestamps()
     })
   }

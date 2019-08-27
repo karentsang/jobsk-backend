@@ -7,11 +7,12 @@ class PostSchema extends Schema {
   up () {
     this.create('posts', (table) => {
       table.increments()
-      table.string('type')
+      table.string('type').notNullable()
       table.string('post_img')
-      table.string('category')
-      table.string('location')
-      table.integer('price')
+      table.string('category').notNullable()
+      table.string('lat').notNullable()
+      table.string('lng').notNullable()
+      table.integer('price').notNullable()
       table.timestamps()
     })
   }

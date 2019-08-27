@@ -4,6 +4,13 @@
 const Model = use('Model')
 
 class Post extends Model {
+    user() {
+        return this.belongsTo('App/Models/User')
+    }
+
+    booking() {
+        return this.hasMany('App/Models/Booking')
+    }
 }
 
 module.exports = Post
