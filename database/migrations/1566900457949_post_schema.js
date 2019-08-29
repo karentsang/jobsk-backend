@@ -13,6 +13,7 @@ class PostSchema extends Schema {
       table.string('lat').notNullable()
       table.string('lng').notNullable()
       table.integer('price').notNullable()
+      table.integer('user_id').notNullable()
       table.timestamps()
     })
   }

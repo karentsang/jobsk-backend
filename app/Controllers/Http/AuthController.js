@@ -3,7 +3,7 @@
 class AuthController {
 
     async register ({request, response, auth}) {
-      let { email, password, firstname, bio, profile_img} = request.body
+      let { email, password, firstname, bio, profile_img } = request.body
       let user = new User()
       user.email = email
       user.password = password

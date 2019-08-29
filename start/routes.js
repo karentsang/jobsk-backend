@@ -19,11 +19,35 @@ const Route = use('Route')
 Route.post('/login', 'AuthController.login')
 Route.post('/register', 'AuthController.register')
 
-Route.get('/', 'UserController.index')
 
-Route.get('/service', 'PostController.indexS')
-Route.get('/job', 'PostController.indexJ')
+//------------------------User Profile------------------------//
+//For getting user object
+Route.get('/user/:id', 'UserController.show')
+//For user to edit personal bio
+Route.get('/user/:id/bio', 'UserController.edit').middleware('auth')
+//-----------------User Profile (Post)-----------------//
+//Note: better to create two APIs on the front end to call separate route
+Route.get('/user/:id/post', 'PostController.show')
+Route.get('/user/:id/bookingPending', 'BookingController.showPending')
+//Accept job
+Route.put('/user/:id/booking/:bid/','BookingController.accept')
+//-----------------User Profile (Calendar)------------//
+//For getting bookings on calendar
+Route.get('/user/:id/bookingConfirm','BookingController.showConfirm')
+//-----------------User Profile (Review)--------------//
+//For getting all review of one user
+Route.get('/user/:id/review','ReviewController.show')
 
-Route.get('/', 'BookingController.index')
+
+//For look for job or service page
+Route.get('/post/:type', 'PostController.index')
+//For filer job or service
+Route.get('/post/:type/:filter', 'PostController.filter')
+//For creating a new post
+Route.post('/post/:type/new', 'PostController.create')
+
+
+//For 
+Route.get('/booking/create', 'BookingController.create')
 
 Route.get('/', 'ReviewController.index')
