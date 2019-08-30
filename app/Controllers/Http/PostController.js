@@ -6,15 +6,26 @@ const User = use('App/Models/User')
 
 class PostController {
 
+    async indext () {
+        let post = await Post.all()
+        return post
+    }
+    
     async index ({params}) {
-        let post = await Post.findBy('type', params.type)
+        let post = await Post
+            .query()
+            .where('type', params.type)
+            .fetch()
         return post
     }
 
     async filter ({params}) {
-        let post = await Post.findBy('type', params.type)
-        let filter = await post.findBy('category', params.filter)
-        return filter
+        let post = await Post
+            .query()
+            .where({'type': params.type,
+                'category': params.filter})
+            .fetch()
+        return post
     }
     
     async create({ request,params }) {
@@ -30,7 +41,10 @@ class PostController {
     }
 
     async show({params}) {
-        let post = await Post.findBy('user_id', params.id)
+        let post = await Post
+            .query()
+            .where('user_id', params.id)
+            .fetch()
         return post
     }
 

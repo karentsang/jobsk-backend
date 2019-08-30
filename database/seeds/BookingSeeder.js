@@ -16,7 +16,7 @@ const Booking = use('App/Models/Booking')
 
 class BookingSeeder {
   async run () {
-    await Booking.creatMany(
+    await Booking.createMany(
       [
         {
           start_date:'2019-01-01 12:00:00',
@@ -28,7 +28,7 @@ class BookingSeeder {
         {
           start_date:'2019-08-11 12:00:00',
           end_date: '2019-08-11 13:00:00',
-          status: 'Completed',
+          status: 'Pending',
           post_id: 1,
           user_id: 6
         },

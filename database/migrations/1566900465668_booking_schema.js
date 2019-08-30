@@ -10,8 +10,8 @@ class BookingSchema extends Schema {
       table.datetime('start_date').notNullable()
       table.datetime('end_date').notNullable()
       table.string('status').defaultTo('pending')
-      table.integer('user_id').notNullable().unique()
-      table.integer('post_id').notNullable().unique()
+      table.integer('user_id').notNullable()
+      table.integer('post_id').notNullable()
       table.timestamps()
     })
   }
