@@ -50,10 +50,13 @@ Route.get('/post/:type', 'PostController.index')
 //For filer job or service
 Route.get('/post/:type/:filter', 'PostController.filter')
 //For creating a new post
-Route.post('/post/:type/new', 'PostController.create')
+Route.post('/post/:type/create', 'PostController.create')
 //For creating new booking
-Route.get('/post/:id/booking/create', 'BookingController.create')
+Route.post('/post/:id/booking/create', 'BookingController.create')
 
 
-//All routes take in params except BookingController.create
+//All routes take in params except 
+//PostController.create
+//takes in type, post_img, category, lat, lng, price
+//BookingController.create
 //takes in start_date, end_date, user_id from body

@@ -31,12 +31,13 @@ class BookingController {
 
     async create({request, params}) {
         let booking = new Booking()
+        console.log(request.body)
         booking.start_date = request.body.start_date
         booking.end_date = request.body.end_date
         booking.user_id = request.body.user_id
         booking.post_id = params.id
         await booking.save()
-        return (`Booking created:${booking}`)
+        return booking
     }
 
     async accept({params}) {
@@ -56,7 +57,7 @@ class BookingController {
                 .update({status: 'Reject'})
 
             let rejectBooking = await Booking.query().where('post_id',acceptBooking.post_id).fetch()
-            return rejectBooking
+            return acceptBooking
         } 
     }
 

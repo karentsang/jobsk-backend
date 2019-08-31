@@ -36,8 +36,9 @@ class PostController {
         post.lat = request.body.lat
         post.lng = request.body.lng
         post.price = request.body.price
+        post.user_id = request.body.user_id
         await post.save()
-        return ('New post created')
+        return post
     }
 
     async show({params}) {
