@@ -8,7 +8,7 @@ class PostSchema extends Schema {
     this.create('posts', (table) => {
       table.increments()
       table.string('type').notNullable()
-      table.string('post_img')
+      table.string('post_img').notNullable()
       table.string('category').notNullable()
       table.string('lat').notNullable()
       table.string('lng').notNullable()

@@ -54,6 +54,20 @@ Route.post('/post/:type/create', 'PostController.create')
 //For creating new booking
 Route.post('/post/:id/booking/create', 'BookingController.create')
 
+const Cloudinary = use('Cloudinary')
+ 
+Route.post('upload', async ({ request }) => {
+ 
+    let profilePic = request.file('image', { types: ['image'], size: '2mb' })
+ 
+    let cloudinaryMeta = await Cloudinary.uploader.upload(profilePic.tmpPath)
+ 
+    cloudinaryMeta.secure_url
+ 
+    return cloudinaryMeta // just an example
+ 
+})
+
 
 //All routes take in params except 
 //PostController.create

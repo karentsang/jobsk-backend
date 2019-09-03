@@ -70,26 +70,26 @@ module.exports = {
   | npm i --save pg
   |
   */
-  // pg: {
-  //   client: 'pg',
-  //   connection: {
-  //     host: Env.get('DB_HOST', 'localhost'),
-  //     port: Env.get('DB_PORT', ''),
-  //     user: Env.get('DB_USER', 'root'),
-  //     password: Env.get('DB_PASSWORD', ''),
-  //     database: Env.get('DB_DATABASE', 'adonis')
-  //   },
-  //   debug: Env.get('DB_DEBUG', false)
-  // }
   pg: {
     client: 'pg',
     connection: {
-      host: '127.0.0.1',
-      port: 5432,
-      user: '',
-      password: '',
-      database: 'adonis',
-      ssl: false
-    }
+      host: Env.get('DB_HOST', 'localhost'),
+      port: Env.get('DB_PORT', ''),
+      user: Env.get('DB_USER', 'root'),
+      password: Env.get('DB_PASSWORD', ''),
+      database: Env.get('DB_DATABASE', 'adonis')
+    },
+    debug: Env.get('DB_DEBUG', false)
   }
+  // pg: {
+  //   client: 'pg',
+  //   connection: {
+  //     host: '127.0.0.1',
+  //     port: 5432,
+  //     user: '',
+  //     password: '',
+  //     database: 'adonis',
+  //     ssl: false
+  //   }
+  // }
 }

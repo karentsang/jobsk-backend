@@ -29,6 +29,7 @@ class PostController {
     }
     
     async create({ request,params }) {
+        console.log("params", params, request.body)
         let post = new Post()
         post.type = params.type
         post.post_img = request.body.post_img
@@ -40,6 +41,10 @@ class PostController {
         await post.save()
         return post
     }
+
+    // slider
+    // 1
+    // -30
 
     async show({params}) {
         let post = await Post
