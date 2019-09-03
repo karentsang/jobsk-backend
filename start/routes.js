@@ -18,8 +18,11 @@ const Route = use('Route')
 
 Route.post('/login', 'AuthController.login')
 Route.post('/register', 'AuthController.register')
+Route.post('/oauth','AuthController.loginGoogle')
+
 
 Route.get('/user', 'UserController.index')
+Route.delete('/removeuser', 'UserController.remove')
 Route.get('/post', 'PostController.indext')
 Route.get('/booking', 'BookingController.index')
 Route.get('/review', 'ReviewController.index')

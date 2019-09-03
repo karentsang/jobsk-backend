@@ -19,6 +19,13 @@ class UserController {
         await user.save()
         return ('Bio updated')
     }
+
+    async remove({request}) {
+        let {email} = request.body
+        let user = await User.findBy('email',email)
+        await user.delete()
+        return ('Account deleted')
+    }
 }
 
 module.exports = UserController

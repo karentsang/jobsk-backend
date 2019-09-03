@@ -1,4 +1,5 @@
 'use strict'
+const User = use('App/Models/User')
 
 class AuthController {
 
@@ -28,6 +29,34 @@ class AuthController {
         }
         catch (e) {
           return response.json({message: 'You first need to register!'})
+        }
+      }
+
+      async loginGoogle({request, response, auth}) {
+        let { email,uid,firstname,img } = request.body
+        let test = await User.findBy('email',email)
+        try{
+          if (test==null) {
+            let user = new User()
+
+            user.email = email
+            user.password = uid
+            user.firstname = firstname
+            user.profile_img = img
+            await user.save()
+            
+            let accessToken = await auth.generate(user)
+            response.send('Account Created')
+            return response.json({"user": user, "access_token": accessToken})
+          }
+          else{
+            let accessToken = await auth.generate(test)
+            response.send('Account Retrieved')
+            return response.json({"user": test, "access_token": accessToken})
+          }
+        }
+        catch(e){
+          return response.json({message: 'You already have an account'})
         }
       }
   }
