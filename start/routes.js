@@ -37,6 +37,7 @@ Route.get('/user/:id/bio', 'UserController.edit').middleware('auth')
 //Note: better to create two APIs on the front end to call separate route
 Route.get('/user/:id/post', 'PostController.show')
 Route.get('/user/:id/bookingPending', 'BookingController.showPending')
+Route.get('/onePost/:pid', 'PostController.indexOne')
 //Accept job + show all booking in the same post
 Route.put('/user/:id/acceptBooking/:bid/','BookingController.accept')
 //-----------------User Profile (Calendar)------------//

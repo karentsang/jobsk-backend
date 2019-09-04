@@ -10,6 +10,11 @@ class PostController {
         let post = await Post.all()
         return post
     }
+
+    async indexOne({params}) {
+        let post = await Post.find(params.pid)
+        return post
+    }
     
     async index ({params}) {
         let post = await Post
