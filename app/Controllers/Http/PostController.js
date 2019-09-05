@@ -6,6 +6,12 @@ const User = use('App/Models/User')
 
 class PostController {
 
+    async getUserId({params}) {
+        let post = await Post.find(params.pid)
+        let userId = post.user_id
+        return userId
+    }
+
     async indext () {
         let post = await Post.all()
         return post

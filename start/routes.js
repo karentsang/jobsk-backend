@@ -26,7 +26,7 @@ Route.delete('/removeuser', 'UserController.remove')
 Route.get('/post', 'PostController.indext')
 Route.get('/booking', 'BookingController.index')
 Route.get('/review', 'ReviewController.index')
-
+Route.get('/getUserFromPost/:pid', 'PostController.getUserId')
 
 //------------------------User Profile------------------------//
 //For getting user object

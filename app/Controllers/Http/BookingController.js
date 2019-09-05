@@ -7,7 +7,9 @@ class BookingController {
     async onePostallB({params}) {
         let booking = await Booking
             .query()
-            .where('post_id', params.pid)
+            .where({
+                'post_id': params.pid,
+                'status': 'Pending'})
             .fetch()
         return booking
     }
