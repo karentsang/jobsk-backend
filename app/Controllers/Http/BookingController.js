@@ -4,6 +4,14 @@ const Booking = use('App/Models/Booking')
 const Post = use('App/Models/Post')
 
 class BookingController {
+    async onePostallB({params}) {
+        let booking = await Booking
+            .query()
+            .where('post_id', params.pid)
+            .fetch()
+        return booking
+    }
+
     async index () {
         let booking = await Booking.all()
         return booking

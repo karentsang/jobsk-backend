@@ -38,6 +38,7 @@ Route.get('/user/:id/bio', 'UserController.edit').middleware('auth')
 Route.get('/user/:id/post', 'PostController.show')
 Route.get('/user/:id/bookingPending', 'BookingController.showPending')
 Route.get('/onePost/:pid', 'PostController.indexOne')
+Route.get('/allBooking/:pid', 'BookingController.onePostallB')
 //Accept job + show all booking in the same post
 Route.put('/user/:id/acceptBooking/:bid/','BookingController.accept')
 //-----------------User Profile (Calendar)------------//
