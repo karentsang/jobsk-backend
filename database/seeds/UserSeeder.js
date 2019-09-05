@@ -44,7 +44,7 @@ class UserSeeder {
         },
         {
           // username:'suang4',
-          email:'sukalst@gmail.com',
+          email:'sukalst1@gmail.com',
           password:'suang423',
           firstname:'Olivia',
           bio:'British-Hong Kong DJ/producer Olivia Dawn has been shaking up the industry with her unique talent at the age of 25.',
@@ -52,7 +52,7 @@ class UserSeeder {
         },
         {
           // username:'suang5',
-          email:'sukalst@gmail.com',
+          email:'sukalst2@gmail.com',
           password:'suang523',
           firstname:'Zihao',
           bio:'Zihao is a dance tutor based in Hong Kong and Macau.',
@@ -60,7 +60,7 @@ class UserSeeder {
         },
         {
           // username:'suang6',
-          email:'sukalst@gmail.com',
+          email:'sukalst3@gmail.com',
           password:'suang623',
           firstname:'Harrison',
           bio:'Harrison Wong, founder of Harrison Wong Ltd based in Hong Kong ',
@@ -68,7 +68,7 @@ class UserSeeder {
         },
         {
           // username:'suang1',
-          email:'suang1@gmail.com',
+          email:'suang4@gmail.com',
           password:'suang123',
           firstname:'suang1',
           bio:'Suang is a super model based in Hong Kong',
@@ -76,7 +76,7 @@ class UserSeeder {
         },
         {
           // username:'suang2',
-          email:'sukalst@gmail.com',
+          email:'sukalst5@gmail.com',
           password:'suang223',
           firstname:'Tim',
           bio:'Tim ORourke is a leading professional commercial photographer based in Hong Kong.',
@@ -84,7 +84,7 @@ class UserSeeder {
         },
         {
           // username:'suang3',
-          email:'sabrinaforever.fu@gmail.com',
+          email:'sabrinaforever.fu1@gmail.com',
           password:'suang323',
           firstname:'Sabrina',
           bio:'Sabrina is a U.K trained painter based in Hong Kong',
@@ -92,7 +92,7 @@ class UserSeeder {
         },
         {
           // username:'suang4',
-          email:'sukalst@gmail.com',
+          email:'sukalst6@gmail.com',
           password:'suang423',
           firstname:'Olivia',
           bio:'British-Hong Kong DJ/producer Olivia Dawn has been shaking up the industry with her unique talent at the age of 25.',
@@ -100,7 +100,7 @@ class UserSeeder {
         },
         {
           // username:'suang5',
-          email:'sukalst@gmail.com',
+          email:'sukalst7@gmail.com',
           password:'suang523',
           firstname:'Zihao',
           bio:'Zihao is a dance tutor based in Hong Kong and Macau.',
@@ -108,7 +108,7 @@ class UserSeeder {
         },
         {
           // username:'suang6',
-          email:'sukalst@gmail.com',
+          email:'sukalst8@gmail.com',
           password:'suang623',
           firstname:'Harrison',
           bio:'Harrison Wong, founder of Harrison Wong Ltd based in Hong Kong ',
@@ -116,7 +116,7 @@ class UserSeeder {
         },
         {
           // username:'suang1',
-          email:'suang1@gmail.com',
+          email:'suang9@gmail.com',
           password:'suang123',
           firstname:'suang1',
           bio:'Suang is a super model based in Hong Kong',
@@ -124,7 +124,7 @@ class UserSeeder {
         },
         {
           // username:'suang2',
-          email:'sukalst@gmail.com',
+          email:'sukalst10@gmail.com',
           password:'suang223',
           firstname:'Tim',
           bio:'Tim ORourke is a leading professional commercial photographer based in Hong Kong.',
@@ -132,7 +132,7 @@ class UserSeeder {
         },
         {
           // username:'suang3',
-          email:'sabrinaforever.fu@gmail.com',
+          email:'sabrinaforever.fu2@gmail.com',
           password:'suang323',
           firstname:'Sabrina',
           bio:'Sabrina is a U.K trained painter based in Hong Kong',
@@ -140,7 +140,7 @@ class UserSeeder {
         },
         {
           // username:'suang4',
-          email:'sukalst@gmail.com',
+          email:'sukalst11@gmail.com',
           password:'suang423',
           firstname:'Olivia',
           bio:'British-Hong Kong DJ/producer Olivia Dawn has been shaking up the industry with her unique talent at the age of 25.',
@@ -148,7 +148,7 @@ class UserSeeder {
         },
         {
           // username:'suang5',
-          email:'sukalst@gmail.com',
+          email:'sukalst12@gmail.com',
           password:'suang523',
           firstname:'Zihao',
           bio:'Zihao is a dance tutor based in Hong Kong and Macau.',
@@ -156,7 +156,7 @@ class UserSeeder {
         },
         {
           // username:'suang6',
-          email:'sukalst@gmail.com',
+          email:'sukalst13@gmail.com',
           password:'suang623',
           firstname:'Harrison',
           bio:'Harrison Wong, founder of Harrison Wong Ltd based in Hong Kong ',
@@ -164,7 +164,7 @@ class UserSeeder {
         },
         {
           // username:'suang1',
-          email:'suang1@gmail.com',
+          email:'suang12@gmail.com',
           password:'suang123',
           firstname:'suang1',
           bio:'Suang is a super model based in Hong Kong',
@@ -172,7 +172,7 @@ class UserSeeder {
         },
         {
           // username:'suang2',
-          email:'sukalst@gmail.com',
+          email:'sukalst14@gmail.com',
           password:'suang223',
           firstname:'Tim',
           bio:'Tim ORourke is a leading professional commercial photographer based in Hong Kong.',
@@ -180,7 +180,7 @@ class UserSeeder {
         },
         {
           // username:'suang3',
-          email:'sabrinaforever.fu@gmail.com',
+          email:'sabrinaforever.fu3@gmail.com',
           password:'suang323',
           firstname:'Sabrina',
           bio:'Sabrina is a U.K trained painter based in Hong Kong',
@@ -188,7 +188,7 @@ class UserSeeder {
         },
         {
           // username:'suang4',
-          email:'sukalst@gmail.com',
+          email:'sukalst15@gmail.com',
           password:'suang423',
           firstname:'Olivia',
           bio:'British-Hong Kong DJ/producer Olivia Dawn has been shaking up the industry with her unique talent at the age of 25.',
@@ -196,7 +196,7 @@ class UserSeeder {
         },
         {
           // username:'suang5',
-          email:'sukalst@gmail.com',
+          email:'sukalst16@gmail.com',
           password:'suang523',
           firstname:'Zihao',
           bio:'Zihao is a dance tutor based in Hong Kong and Macau.',
@@ -204,7 +204,7 @@ class UserSeeder {
         },
         {
           // username:'suang6',
-          email:'sukalst@gmail.com',
+          email:'sukalst17@gmail.com',
           password:'suang623',
           firstname:'Harrison',
           bio:'Harrison Wong, founder of Harrison Wong Ltd based in Hong Kong ',
@@ -212,7 +212,7 @@ class UserSeeder {
         },
         {
           // username:'suang1',
-          email:'suang1@gmail.com',
+          email:'suang19@gmail.com',
           password:'suang123',
           firstname:'suang1',
           bio:'Suang is a super model based in Hong Kong',
@@ -220,7 +220,7 @@ class UserSeeder {
         },
         {
           // username:'suang2',
-          email:'sukalst@gmail.com',
+          email:'sukalst20@gmail.com',
           password:'suang223',
           firstname:'Tim',
           bio:'Tim ORourke is a leading professional commercial photographer based in Hong Kong.',
@@ -228,7 +228,7 @@ class UserSeeder {
         },
         {
           // username:'suang3',
-          email:'sabrinaforever.fu@gmail.com',
+          email:'sabrinaforever.fu4@gmail.com',
           password:'suang323',
           firstname:'Sabrina',
           bio:'Sabrina is a U.K trained painter based in Hong Kong',
@@ -236,7 +236,7 @@ class UserSeeder {
         },
         {
           // username:'suang4',
-          email:'sukalst@gmail.com',
+          email:'sukalst21@gmail.com',
           password:'suang423',
           firstname:'Olivia',
           bio:'British-Hong Kong DJ/producer Olivia Dawn has been shaking up the industry with her unique talent at the age of 25.',
@@ -244,7 +244,7 @@ class UserSeeder {
         },
         {
           // username:'suang5',
-          email:'sukalst@gmail.com',
+          email:'sukalst22@gmail.com',
           password:'suang523',
           firstname:'Zihao',
           bio:'Zihao is a dance tutor based in Hong Kong and Macau.',
@@ -252,7 +252,7 @@ class UserSeeder {
         },
         {
           // username:'suang6',
-          email:'sukalst@gmail.com',
+          email:'sukalst23@gmail.com',
           password:'suang623',
           firstname:'Harrison',
           bio:'Harrison Wong, founder of Harrison Wong Ltd based in Hong Kong ',
