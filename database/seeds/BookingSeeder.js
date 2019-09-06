@@ -51,7 +51,7 @@ class BookingSeeder {
           end_date: '2019-10-01 13:00:00',
           status: 'Pending',
           post_id: 6,
-          user_id: 1
+          user_id: 5
         },
         {
           start_date:'2019-09-01 12:00:00',
@@ -79,7 +79,7 @@ class BookingSeeder {
           end_date: '2019-07-01 13:00:00',
           status: 'Completed',
           post_id: 10,
-          user_id: 11
+          user_id: 5
         },
         {
           start_date:'2019-09-01 12:00:00',

@@ -106,7 +106,7 @@ class PostSeeder {
           lat:'22.355099',
           lng:'114.155042',
           price: 200,
-          user_id: 2
+          user_id: 5
         },
         {
           type:'Offering',
@@ -151,7 +151,7 @@ class PostSeeder {
           lat:'22.439099',
           lng:'114.252042',
           price: 200,
-          user_id: 9
+          user_id: 5
         },
         {
           type:'Offering',
@@ -187,7 +187,7 @@ class PostSeeder {
           lat:'22.239099',
           lng:'114.250042',
           price: 200,
-          user_id: 13
+          user_id: 5
         },
         {
           type:'Providing',
@@ -232,7 +232,7 @@ class PostSeeder {
           lat:'22.351099',
           lng:'114.251042',
           price: 200,
-          user_id: 18
+          user_id: 25
         },
         {
           type:'Offering',
@@ -250,7 +250,7 @@ class PostSeeder {
           lat:'22.398099',
           lng:'114.191042',
           price: 200,
-          user_id: 20
+          user_id: 5
         },
         {
           type:'Providing',
