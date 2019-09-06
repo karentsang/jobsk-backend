@@ -157,8 +157,8 @@ class PostSeeder {
           type:'Offering',
           post_img:"https://cdn.mos.cms.futurecdn.net/MJ4xmbGcbsKZda5XEkjZGc-320-80.jpg",
           category:'Musicians',
-          lat:'22.237099',
-          lng:'114.456042',
+          lat:'22.3012374',
+          lng:'114.1859092',
           price: 200,
           user_id: 10
         },
